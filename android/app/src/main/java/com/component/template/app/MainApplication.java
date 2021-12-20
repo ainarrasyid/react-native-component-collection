@@ -1,4 +1,4 @@
-package com.starter.app;
+package com.component.template.app;
 
 import com.facebook.react.bridge.JSIModulePackage;
 import com.swmansion.reanimated.ReanimatedJSIModulePackage;
