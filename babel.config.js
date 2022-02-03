@@ -15,6 +15,8 @@ module.exports = {
           '@screens': './sources/screens'
         }
       }
-    ]
+    ],
+    'jest-hoist',
+    'react-native-reanimated/plugin'
   ]
 }

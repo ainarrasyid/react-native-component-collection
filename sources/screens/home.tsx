@@ -59,7 +59,65 @@ function Home({ navigation, route }: StackScreenPropsType<'Home'>) {
               fontWeight: '500'
             }}
           >
-            Go To Pick Image Screen
+            Image Picker
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('Dropdown')}
+          style={{
+            backgroundColor: 'dodgerblue',
+            borderRadius: 8,
+            elevation: 4,
+            marginHorizontal: 20,
+            marginTop: 20,
+            paddingHorizontal: 16,
+            paddingVertical: 8,
+            shadowColor: 'dimgray',
+            shadowOffset: {
+              height: 2,
+              width: 0
+            },
+            shadowOpacity: 0.3,
+            shadowRadius: 4
+          }}
+        >
+          <Text
+            style={{
+              color: 'white',
+              fontSize: 20,
+              fontWeight: '500'
+            }}
+          >
+            Dropdown Collection
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+        onPress={()=> navigation.navigate('Caraousel')}
+        style={{
+          backgroundColor:'dodgerblue',
+          borderRadius:8,
+          elevation:4,
+          marginHorizontal:20,
+          marginTop:20,
+          paddingHorizontal:16,
+          paddingVertical:8,
+          shadowColor:'dimgray',
+          shadowOffset:{
+            height: 2,
+            width: 0
+          },
+          shadowOpacity: 0.3,
+          shadowRadius: 4
+        }}
+        >
+          <Text
+            style={{
+              color: 'white',
+              fontSize: 20,
+              fontWeight: '500'
+            }}
+          >
+            Carousel Collection
           </Text>
         </TouchableOpacity>
       </View>

@@ -84,13 +84,13 @@ function GenerateAPIsFromAPIParamsType() {
     }>
   }
 
-  let APIs = {} as APIsType
+  const APIs = {} as APIsType
 
   for (const key in APIConfigs) {
     const selectedKey = key as keyof APIsType
 
     const [ method, endpointPath  ] = APIConfigs[selectedKey]
-    
+
     APIs[selectedKey] = (params: APIParamsType[typeof selectedKey]) => Fetch(method, endpointPath, params)
   }
 
@@ -108,14 +108,14 @@ const Fetch = async(method: string, endpoint: string, params?: any) => {
 
   let additionalURL = ''
 
-  let body: FormData | undefined = undefined
-  
+  let body: FormData | undefined
+
   if (params) {
     switch (method) {
-      case 'GET': { 
+      case 'GET': {
         for (const key in params) {
           additionalURL += additionalURL == '' ? '?' : '&'
-    
+
           additionalURL += `${key}=${params[key]}`
         }
 

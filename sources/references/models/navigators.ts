@@ -3,7 +3,9 @@ import { StackNavigationProp } from '@react-navigation/stack'
 
 export type NavigatorParameters = {
   Home: undefined
+  Dropdown: undefined
   PickImage: undefined
+  Caraousel: undefined
 }
 
 export type StackScreenPropsType<K extends keyof NavigatorParameters> = {
