@@ -21,7 +21,7 @@
     "@react-navigation/native": "6.0.2",
     "@react-navigation/stack": "6.0.6",
     "react": "17.0.2",
-    "react-native": "0.66.2",
+    "react-native": "0.68.0",
     "react-native-chooser": "^1.7.0",
     "react-native-dropdown-picker": "^5.2.3",
     "react-native-gesture-handler": "1.10.3",
