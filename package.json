@@ -37,7 +37,7 @@
     "react-native-snap-carousel": "^3.9.1",
     "react-native-toast-message": "1.4.9",
     "react-native-vector-icons": "^9.0.0",
-    "react-native-webview": "11.18.1",
+    "react-native-webview": "11.23.1",
     "sharingan-rn-modal-dropdown": "^1.4.0"
   },
   "devDependencies": {
